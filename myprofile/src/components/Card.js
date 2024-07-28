@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 const Card = styled.div`
-  background-color: #2a2a2a; /* Dark background for card */
-  padding: 1rem;
+  background-color: #333; /* Dark background for card */
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for card */
+  color: #fff; /* Text color for dark mode */
 `;
 
 export default Card;
