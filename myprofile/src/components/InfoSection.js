@@ -1,15 +1,14 @@
-// src/components/InfoSection.js
 import React from 'react';
-import Card from './Card';
+import EducationCard from './EducationCard';
+import SkillsCard from './SkillsCard'; 
+import CertificatesCard from './CertificatesCard';
 
-const InfoSection = () => {
-  return (
-    <section className="info-section">
-      <Card className="info-card">Education</Card>
-      <Card className="info-card">Sertifikat</Card>
-      <Card className="info-card">Skills</Card>
-    </section>
-  );
-};
+const InfoSection = () => (
+  <div className="info-section">
+    <EducationCard />
+    <SkillsCard />
+    <CertificatesCard />
+  </div>
+);
 
 export default InfoSection;

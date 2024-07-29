@@ -1,4 +1,3 @@
-// src/components/ProfileCard.js
 import React from 'react';
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import Card from './Card';
@@ -11,7 +10,7 @@ const ProfileCard = () => {
       </div>
       <h2 className="profile-name">Alga Prananda</h2>
       <p className="job-title">Data Analyst | Web Developer</p>
-      <a className="resume-link" href="path/to/your/resume.pdf" download>
+      <a className="resume-link" href="https://drive.google.com/file/d/1NUs2XEMOcTMZZTCZFzCh5kPWHBPLS2Fb/view?usp=sharing" target="_blank" rel="noopener noreferrer" download>
         Download Resume/CV
       </a>
       <div className="social-media-icons">

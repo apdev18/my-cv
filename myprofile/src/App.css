@@ -1,4 +1,4 @@
-/* App.css */
+/* src/App.css */
 
 /* General Styles */
 body {
@@ -6,46 +6,46 @@ body {
     color: #fff;
     margin: 0;
     font-family: Arial, sans-serif;
-  }
-  
-  .container {
+}
+
+.container {
     display: grid;
     grid-template-rows: auto auto 1fr auto;
     gap: 1rem;
     padding: 1rem;
     min-height: 100vh;
-  }
-  
-  .header {
+}
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
     background-color: #333;
     border-radius: 8px;
-  }
-  
-  .navbar {
+}
+
+.navbar {
     display: flex;
     gap: 1rem;
-  }
-  
-  .main {
+}
+
+.main {
     display: grid;
     grid-template-columns: 1fr 3fr;
     gap: 1rem;
-  }
-  
-  .profile-card {
+}
+
+.profile-card {
     grid-column: 1;
     padding: 32px;
     text-align: center;
     height: fit-content;
     max-height: 400px;
     overflow: auto;
-  }
-  
-  .profile-image-wrapper {
+}
+
+.profile-image-wrapper {
     width: 128px;
     height: 128px;
     border-radius: 50%;
@@ -54,129 +54,276 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0 auto 1rem;
-  }
-  
-  .profile-image {
+}
+
+.profile-image {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-  }
-  
-  .profile-name {
+}
+
+.profile-name {
     color: #fff;
     margin: 0;
     margin-bottom: 0.5rem;
-  }
-  
-  .job-title {
+}
+
+.job-title {
     color: #aaa;
     margin: 0;
     margin-bottom: 1rem;
-  }
-  
-  .resume-link {
+}
+
+.resume-link {
     color: #1e90ff;
     text-decoration: none;
-  }
-  
-  .resume-link:hover {
+}
+
+.resume-link:hover {
     text-decoration: underline;
-  }
-  
-  .social-media-icons {
+}
+
+.social-media-icons {
     display: flex;
     justify-content: center;
     gap: 1rem;
     margin-top: 1rem;
-  }
-  
-  .projects-section {
+}
+
+.projects-section {
     grid-column: 2;
     display: grid;
     grid-template-rows: auto 1fr;
     gap: 0;
     padding: 1.2rem;
-  }
-  
-  .projects-header {
+}
+
+.projects-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0;
-  }
-  
-  .projects-grid {
+}
+
+.projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0.4rem;
-  }
-  
-  .project-card {
+}
+
+.project-card {
     display: flex;
     flex-direction: column;
     padding: 0.7rem;
-  }
-  
-  .project-header {
+}
+
+.project-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0.5rem;
-  }
-  
-  .project-title {
+}
+
+.project-title {
     margin: 0;
-  }
-  
-  .project-link {
+}
+
+.project-link {
     color: #1e90ff;
     text-decoration: none;
-  }
-  
-  .project-link:hover {
+}
+
+.project-link:hover {
     text-decoration: underline;
-  }
-  
-  .project-description {
+}
+
+.project-description {
     color: #aaa;
     margin: 0 0 0.5rem 0;
-  }
-  
-  .project-description .p {
+}
+
+.project-description .p {
     font-size: 10px;
-  }
-  
-  .project-stats {
+}
+
+.project-stats {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .stat {
+}
+
+.stat {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     color: #aaa;
-  }
-  
-  .compact-stat {
+}
+
+.compact-stat {
     display: flex;
     align-items: center;
     gap: 0.25rem;
     color: #aaa;
-  }
-  
-  .info-section {
+}
+
+.info-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-  }
-  
-  
-  .footer {
+}
+
+.info-card {}
+
+.footer {
     background-color: #333;
     padding: 1rem;
     text-align: center;
     border-radius: 8px;
+}
+
+/* src/CardEducation.css */
+.education-card {
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.education-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.education-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.education-logo {
+    width: 100px;
+    height: 100px;
+}
+
+.education-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.education-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.education-major {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.education-period {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* src/CardSkills.css */
+.skills-card {
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.skills-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.skills-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.skills-logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.skills-logos > * {
+    flex: 0 0 auto; /* Prevent logos from stretching */
+}
+
+
+/* src/App.css or src/index.css */
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+
+.certificates-card {
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    color: #fff;
+    margin: 0rem;
+    max-width: 500px; /* Sesuaikan dengan ukuran card lainnya */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .certificates-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  
+  .certificates-slider {
+    position: relative;
+    width: 500px;
+    height: 100px; /* Sesuaikan dengan tinggi card */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .certificate-iframe {
+    width: 400px;
+    height: 300px;
+    border: none;
+  }
+  
+  .slider-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 4px;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
   }
   

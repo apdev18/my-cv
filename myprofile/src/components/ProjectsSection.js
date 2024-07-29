@@ -1,4 +1,3 @@
-// src/components/ProjectsSection.js
 import React from 'react';
 import { FaGithub, FaStar, FaCodeBranch, FaCode } from 'react-icons/fa';
 import Card from './Card';

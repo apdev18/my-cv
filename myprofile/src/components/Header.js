@@ -1,7 +1,14 @@
-// src/components/Header.js
-import React from 'react';
+import React, { useState } from 'react';
+import { FaMoon, FaSun } from 'react-icons/fa'; // Import ikon dari react-icons
 
 const Header = () => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+    document.body.classList.toggle('dark-mode', !isDarkMode);
+  };
+
   return (
     <header className="header">
       <div>My Profile</div>
@@ -14,7 +21,9 @@ const Header = () => {
         <a href="#skills">Skills</a>
         <a href="#sertifikat">Sertifikat</a>
       </nav>
-      <button>Dark Mode</button>
+      <button className="dark-mode-toggle" onClick={toggleDarkMode}>
+        {isDarkMode ? <FaSun size={24} /> : <FaMoon size={24} />}
+      </button>
     </header>
   );
 };
