@@ -149,7 +149,14 @@ const ProjectStats = styled.div`
 const Stat = styled.div`
   display: flex;
   align-items: center;
-  gap: 0.25rem;
+  gap: 0.5rem; /* Adjust gap between icon and text */
+  color: #aaa;
+`;
+
+const CompactStat = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.25rem; /* Smaller gap between icons */
   color: #aaa;
 `;
 
@@ -273,12 +280,10 @@ const Beranda = () => {
                 </ProjectHeader>
                 <ProjectDescription>{project.description}</ProjectDescription>
                 <ProjectStats>
-                  <Stat>
+                  <CompactStat>
                     <FaStar /> {project.stars}
-                  </Stat>
-                  <Stat>
-                    <FaCodeBranch /> {project.forks}
-                  </Stat>
+                    <FaCodeBranch style={{ marginLeft: '0.5rem' }} /> {project.forks}
+                  </CompactStat>
                   <Stat>
                     <FaCode /> {project.language}
                   </Stat>
@@ -290,7 +295,7 @@ const Beranda = () => {
       </Main>
       <InfoSection>
         <InfoCard>Education</InfoCard>
-        <InfoCard>Certificate</InfoCard>
+        <InfoCard>Sertifikat</InfoCard>
         <InfoCard>Skills</InfoCard>
       </InfoSection>
       <Footer>Footer Content</Footer>
